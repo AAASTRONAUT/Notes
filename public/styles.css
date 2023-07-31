@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+header{
+    background-color: rgb(231, 166, 68);
+    padding: 1rem 2rem;
+    margin: auto -0.5rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0 , 0 ,0 , 0.3);
+}
+
+header h1{
+    /* font-family: 'Borel', cursive; */
+    font-weight: 200;
+    color: whitesmoke;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgb(198, 198, 198);
+}
+
+.note{
+    background-color: white;
+    width: 16rem;
+    padding: 0.5rem;
+    margin: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.note h1{
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.note p{
+    padding: 0.5rem;
+}
