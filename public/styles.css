@@ -30,12 +30,13 @@ footer{
     background-color: rgb(198, 198, 198);
 }
 
-.note{
+.note , .input_note{
     background-color: white;
     width: 16rem;
     padding: 0.5rem;
     margin: 1rem 2rem;
     border-radius: 0.5rem;
+    position: relative;
 }
 
 .note h1{
@@ -43,6 +44,82 @@ footer{
     padding-left: 0.5rem;
 }
 
+.allnotes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .note p{
     padding: 0.5rem;
+}
+
+.note button{
+    width: auto;
+    height: 2.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    background-color: rgb(231, 166, 68);
+    text-decoration: none;
+    cursor: pointer;
+
+    margin: 1rem;
+    padding: 0.4rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.input_note{
+    margin: 1rem auto;
+    width: 25vw;
+    min-width: 250px;
+    height: 15vh;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_note input{
+    background: transparent;
+    border: none;
+    margin: 0.5rem;
+    padding: 0.25rem;
+}
+.input_note input[name="title"]{
+    margin-bottom: 0px;
+}
+.input_note input[name="content"]{
+    margin-top: 0px;
+}
+
+.input_note button{
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    background-color: rgb(231, 166, 68);
+    text-decoration: none;
+    cursor: pointer;
+
+    margin: 1rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.input_note button:hover{
+    background-color: rgb(228, 156, 47);
+}
+.input_note button:focus{
+    background-color: rgb(231, 151, 31);
+    box-shadow: 0 0.3rem 0.2rem 0 rgba(0,0,0,0.19) ;
+    transform: translateY(0.1rem);
 }

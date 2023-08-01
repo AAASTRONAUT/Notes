@@ -1,9 +1,11 @@
 import React from "react";
 
-function Note(){
+function Note(param){
+
     return (<div className="note">
-        <h1>Title</h1>
-        <p contentEditable="true" spellCheck="false">How's your day going on!!</p>
+        <h1>{param.title}</h1>
+        <p>{param.body}</p>
+        <button onClick={()=>param.deleteNote(param.id)}>Delete</button>
     </div>
     );
 }
